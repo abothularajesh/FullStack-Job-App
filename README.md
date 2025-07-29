@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+🧾 Job Application Portal
+A full-stack web application designed to manage and display job postings. The project includes a React-based frontend, a Spring Boot backend, and a PostgreSQL database for persistent data storage.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🔧 Tech Stack
+  #Frontend: React (with basic UI and component-based architecture)
+  
+  #Backend: Java with Spring Boot (RESTful API)
+  
+  #Database: PostgreSQL
+  
+  #ORM: Spring Data JPA (Hibernate)
+  
+  #API Communication: REST API using JSON over HTTP
 
-## Available Scripts
+📌 Project Description
+   This project is a simple job application portal where users can view and manage job listings. It demonstrates full-stack development by connecting a lightweight frontend built in React to a backend powered by     Spring Boot, with persistent data stored in a PostgreSQL database.
+  
+   The backend exposes RESTful APIs for job-related operations such as creating, retrieving, updating, and deleting job posts. These endpoints are consumed by the frontend, enabling seamless communication and        real-time UI updates.
 
-In the project directory, you can run:
+🎥 Demo Video Prompt:
 
-### `npm start`
+  "Create a demo video for my full-stack Job Application web app.
+   The frontend is built using React with a simple UI, and the backend is built using Java with Spring Boot. The database used is PostgreSQL, connected to Spring Boot using JPA/Hibernate ORM. The frontend and        backend are connected using REST APIs.
+   Check it out:https://github.com/abothularajesh/FullStack-Job-App/edit/main/README.md(updating later)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+📂 Features
+✅ Add new job posts (Title, Description, Location, etc.)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+✅ View all job listings
 
-### `npm test`
+✅ Update job details
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+✅ Delete job posts
 
-### `npm run build`
+✅ Frontend-backend integration using REST API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+✅ Data persistence using PostgreSQL
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🚀 How It Works
+#Frontend (React):
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Built with functional components and hooks.
 
-### `npm run eject`
+Axios is used to send HTTP requests to the backend.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Minimal design focused on functionality.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#Backend (Spring Boot):
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Exposes RESTful endpoints (/api/jobs, etc.)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Uses Spring Data JPA for ORM and database operations.
 
-## Learn More
+Connects to PostgreSQL using application properties.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#Database (PostgreSQL):
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Stores job details in a relational table.
 
-### Code Splitting
+Connected via JDBC using Spring Boot configuration.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+⚙️ Setup Instructions
+#Backend (Spring Boot):-
+Clone the repository and open in your preferred IDE.
 
-### Analyzing the Bundle Size
+Configure application.properties:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+properties
+Copy
+Edit
+spring.datasource.url=jdbc:postgresql://localhost:5432/your_db_name
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+Run the Spring Boot application (main() method in the main class).
 
-### Making a Progressive Web App
+#Frontend (React)
+Navigate to the frontend directory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Install dependencies:
+  npm install json server
+  npm install
+**Start the development server:
+  npm start
+📬 API Endpoints (Sample):
 
-### Advanced Configuration
+  GET	/api/jobs	Get all job posts
+  POST	/api/jobs	Create a new job post
+  PUT	/api/jobs/:id	Update an existing job
+  DELETE	/api/jobs/:id	Delete a job post
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  

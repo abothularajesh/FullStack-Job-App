@@ -1,6 +1,8 @@
 🧾 Job Application Portal
 A full-stack web application designed to manage and display job postings. The project includes a React-based frontend, a Spring Boot backend, and a PostgreSQL database for persistent data storage.
 
+##This is not work in the webpage Because the frontend and Backend will be working on console.... You have to download the files and run it on the intellijIdea and vscode you have to Follow the Instrucion below 
+
 🔧 Tech Stack
   #Frontend: React (with basic UI and component-based architecture)
   
